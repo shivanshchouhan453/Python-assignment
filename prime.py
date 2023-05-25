@@ -1,18 +1,21 @@
-num = 17
-  temp = False  
-  if num == 1:  
-      print(num, "is not a prime number")  
-  elif num > 1:  
-       
-      for i in range(2, num):  
-          if (num % i) == 0:  
-                
-              flag = True  
-              
-              break  
-    
-       
-      if temp:  
-          print(num, "is not a prime number")  
-      else:  
-          print(num, "is a prime number")
+n=int(input("enter number"))
+
+count=0
+
+i=1
+
+while(i<=n):
+
+    if(n%i==0):
+
+        count=count+1
+
+    i=i+1
+
+if(count==2):
+
+    print("number is prime")
+
+else:
+
+    print ("number is not prime")
